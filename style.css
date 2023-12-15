@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+
+:root {
+    /* primary colors */
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: rgb(82, 255, 168);
+
+    /* neutral colors*/
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body{
+    background: var(--Dark-Blue);
+    font-family: 'Manrope', sans-serif;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--Dark-Grayish-Blue);
+    border-radius: 10px;
+    margin: 22vh 15vw 22vh 29vw;
+    height: 38vh;
+    width: 45vw;
+    position: relative;
+}
+
+#quote-id{
+    position: absolute;
+    top: 10px; /* Adjust the top value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    color:var(--Neon-Green);
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#advice-id{
+    color: var(--Light-Cyan);
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 0.5em;
+    word-wrap: break-word;
+}
+
+#divider{
+    margin-top: 1em;
+    overflow: hidden;
+    max-width: 100%; 
+    position: absolute;
+    top: 145px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#dice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Neon-Green);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -0.9rem;
+    left: 47%;
+    transform: translateX(-10%);
+    ;
+}
+#dice:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(82, 255, 168, 0.8); /* 0.5 represents 50% opacity */
+
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 26vh 21vw 10vh 23vw;
+        width: 60vw;
+    }
+}
+
+
+.attribution { 
+    color:var(--Neon-Green);
+    font-size: 11px; 
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    text-align: center; 
+}
+.attribution a {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+     color: var(--Light-Cyan);
+    }
+
+
