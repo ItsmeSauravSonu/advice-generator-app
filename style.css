@@ -54,14 +54,28 @@ body{
     word-wrap: break-word;
 }
 
-#divider{
+#divider {
     margin-top: 1em;
     overflow: hidden;
-    max-width: 100%; 
+    width: 100%;
     position: absolute;
-    top: 145px; 
+    top: 70%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+/* Media query for screens with a width of 600px or less */
+@media (max-width: 600px) {
+    #divider {
+        top: 70%; 
+    }
+}
+
+/* Media query for screens with a width of 400px or less */
+@media (max-width: 400px) {
+    #divider {
+        top: 70%;
+    }
 }
 
 #dice{
